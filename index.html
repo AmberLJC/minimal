@@ -65,7 +65,81 @@
 
         footer p {
             text-align: center;
-        }
+        } 
+
+#awards {
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+#awards h2 {
+    color: #333;
+    text-align: center;
+}
+
+#awards ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#awards li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+#projects {
+    background: #f8f8f8;
+    padding: 20px;
+}
+
+#projects .project {
+    display: flex;
+    margin-bottom: 40px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-image {
+    width: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-details {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.project-details h3 {
+    color: #444;
+    margin: 0 0 10px;
+}
+
+.project-details p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.project-link:hover {
+    background: #555;
+}
+
+
     </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -204,7 +278,7 @@ I have maintain <a href="https://github.com/AmberLJC/FLsystem-paper/blob/main/RE
   </p>
  
 
- 
+  </section>
        
     <h2>Publications</h2>
  
@@ -258,6 +332,23 @@ Fan Lai, Yinwei Dai, Sanjay S. Singapuram, Jiachen Liu, Xiangfeng Zhu, Harsha V.
         </tbody>
         </table>
 
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <div class="energy">
+      <img src="imag/energy.png" width="400" height="400" alt="Project Image">
+    </div>
+    <div class="project-details">
+<h3><span style="color: green;">ML.Energy</span> Leaderboard</h3>
+<p style="font-size: 9pt; color: grey;">The goal of the ML.ENERGY Leaderboard is to give people a sense of how much energy LLMs would consume. Try our Colosseum (online LLM serving) to check the energy consumption of LLM inference.</p>
+      <a href="https://ml.energy/leaderboard" class="project-link" target="_blank" title="ml energy leaderboard">View Project</a>
+    </div>
+  </div>
+
+</section>
+
+
+
         <h2> Experience </h2>
 
 <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
@@ -298,41 +389,24 @@ Fan Lai, Yinwei Dai, Sanjay S. Singapuram, Jiachen Liu, Xiangfeng Zhu, Harsha V.
 </table>
 
 
-         
-        <h2>Experience</h2>
-
-                <li>Research Intern in MIT CSAIL Database group  </li>
-                <div align="right">
-         Cambridge, MA </div>    
-         <div align="right">
-        May 2019 - Jan 2020</div>    
-    <li>Teaching Assistant for EECS484 Database Management </li>
-             <div align="right">
-Ann Arbor, MI</div> 
-          <div align="right">
-Sep 2019 - May 2020</div> 
-       
-   <li>Vice President for SJTU-Joint Institute Student Union     </li>
-           <div align="right">
-             <div align="right">
-SH, China</div> 
-          June 2017 - June 2018</div>    
-        
-<h2>Projects</h2>
 
 
-<ul>
-   
-<li> <div id="high_dim"> <a href="file/towards_high_dim_data.pdf" >Towards a High Dimensional Data Management System</a></div>
-Dong Deng, Lei Cao, Jiachen Liu vand Runhui Wang
+<section id="awards">
+  <h2>Awards</h2>
+  <ul>
+    <li>
+      <strong> Machine Learning and Systems Rising Stars (Program of 2023)
+
+    </li>
+    <li>
+      <strong> Shanghai Outstanding Graduate(Top 5%) 2020
+    </li>
   
-   </li>
-</ul>
 
-</div>
+  </ul>
+</section>
 
-      </section>
-      
+
   
 <div style="width:100%; height:10px; clear:both;"></div>
 
@@ -372,10 +446,6 @@ Dong Deng, Lei Cao, Jiachen Liu vand Runhui Wang
 
 
             </footer> 
-
-
-
-
 
 
 
