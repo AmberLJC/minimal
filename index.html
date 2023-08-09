@@ -1,159 +1,127 @@
 <!doctype html>
 <html>
   <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiachen Liu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #444;
+        }
+
+        .list-inline {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .list-inline li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .fa-stack .fa {
+            color: #ADD8E6;
+        }
+
+        .container {
+            max-width: 250px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        footer p {
+            text-align: center;
+        }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>Home of Amber</title>
-  
-  
-  
-<link rel="shortcut icon" href="imag/bubbletea.jpg" type="image/x-icon">             
-
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width">
-
-
-<script src="js/9JZkBilUSmGpH8F5SvwGOfpXbTA.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151270318-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-151270318-1');
-</script>
-
-
-
-<link href="css/bootstrap.css" rel="stylesheet">
-
-<link href="css/css.css" rel="stylesheet">
-
-<!-- <link href="Source_files/fontawesome.css" rel="stylesheet">
-<link href="css/solid.css" rel="stylesheet">
-<link href="css/brands.css" rel="stylesheet">
-
-<link href="css/academicons.css" rel="stylesheet">
-
-<link href="css/style.css" rel="stylesheet">
-<link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
-     -->
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" >
-    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home of Amber</title>
+    <link rel="shortcut icon" href="imag/bubbletea.jpg" type="image/x-icon">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/9JZkBilUSmGpH8F5SvwGOfpXbTA.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151270318-1"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    
     <style>
-    
-    
-    
-    
       body {
         font-size: 15px;
         padding-bottom: 20px;
       }
-
       h1 { font-size: 30px; line-height: 135%;}
       h2 { font-size: 22px; line-height: 135%;}
-      h3 { font-size: 20px; line-height: 135%;}
-      h4 { font-size: 18px; }
-      h5 { font-size: 15px; }
-      h6 { font-size: 13px; }
+      /* ... Other font-sizes */
+      hr { border-top: 2px solid #e5e5e5;}
+      p { text-align: justify;}
 
-      hr {
-        border-top: 2px solid #e5e5e5;
+      .topnav {
+        background-color: #FFC0CB;
+        overflow: hidden;
       }
-
-      p {
-        text-align: justify;
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
       }
+      .topnav a:hover { background-color: #FFFAF0; color: black;}
+      .topnav a.active { background-color: #F08080; color: white;}
 
+      my-email::after { content: "@umich.edu"; }
+      my-phone::after { content: attr(phone-number); }
+      my-phone::before { content: attr(area-code); }
     </style>
-
-    <style> 
-      .div-a{ float:left;width:20pt;} 
-      .div-b{ float:left;width:230pt;} 
-      
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #FFC0CB;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #FFFAF0;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #F08080;
-  color: white;
-}
-    </style> 
-
-    <style>
-      /* my-email::after {
-        content: attr(data-domain);
-      } */
-      my-email::after {
-        content: "@umich.edu";
-      }
-      /* my-email::before {
-        content: attr(data-user);
-      } */
-    </style>
-
-    <style>
-      my-phone::after {
-        content: attr(phone-number);
-      }
-      my-phone::before {
-        content: attr(area-code);
-      }
-      
-          </style>
-    
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
- 
- 
- 
   <body>
-    
-    
-<div class="topnav">
-  <a class="active" href="#">Home</a>
-  <a href="blog.html">Blog</a>
-  <a href="about.html">About</a>
-</div>
-
-
+    <div class="topnav">
+      <a class="active" href="#">Home</a>
+      <a href="blog.html">Blog</a>
+   <!--    <a href="about.html">About</a> -->
+    </div>
+    <!-- ... rest of your HTML content ... -->
 
 
     <div class="wrapper">
@@ -177,17 +145,7 @@
       </span>
       <span class="sr-only">CV</span>
     </a>
-    </li>
- <!-- 
-    <li>
-    <a href="https://scholar.google.com/citations?user=gJix6K4AAAAJ" target="_blank" title="scholar">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-          <i class="ai ai-google-scholar-square fa-2x"></i>
-        </span>
-        <span class="sr-only">Scholar</span>
-    </a>
-    </li>
--->
+    </li> 
     <li>
     <a href="https://github.com/AmberLJC" target="_blank" title="github" >
       <span class="fa-stack fa-lg" aria-hidden="true">
@@ -196,16 +154,7 @@
       <span class="sr-only">GitHub</span>
     </a>
     </li>
-
- <!--     <li>
-    <a href="https://www.linkedin.com/in/jiachen-amber-liu-872506169/" target="_blank" title="linkedin">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fa fa-linkedin-square fa-2x"  style = "color:#ADD8E6"></i>
-      </span>
-      <span class="sr-only">LinkedIn</span>
-    </a>
-    </li>
-   --> 
+ 
     <li>
     <a href="https://scholar.google.com/citations?user=-kQZFScAAAAJ&hl=en" target="_blank" title="linkedin">
       <span class="fa-stack fa-lg" aria-hidden="true"  style = "color:#ADD8E6">
@@ -219,64 +168,12 @@
   
   
   
-  
-<div style="width:100%; height:10px; clear:both;"></div>
-<hr>
-
-<div style="text-align:center;">
-
-<div style="text-align:left;" class="container" width="250px">
-<h4>Contact</h4>
-
-
-<i class="fa fa-envelope" style="font-size:16px"></i>
-<!-- <span class="font-weight-bold2" style="line-height:150%;"><my-email data-user="amberljc"></my-email></span><br> -->
-<span class="font-weight-bold2" style="line-height:150%;">amberljc<my-email></my-email></span><br>
-<div style="line-height:5px;">
-<i class="fa fa-phone-square" style="font-size:18px;width:16px;" aria-hidden="true"></i>
-<span class="font-weight-bold2" style="line-height:150%;"><my-phone area-code="(734)" phone-number="881-4120" >-</my-phone></span><br>
-<div style="line-height:15px;">
-<!-- <i class="fa fa-address-card" style="font-size:15px;"></i> -->
-<i class="fa fa-map-marker" aria-hidden="true" style="font-size:20px;" style="margin-left:2px;"></i>
-<span class="font-weight-bold2" style="margin-left:5px;"><small>EECS (CSE)</small></span><br>
-<span class="font-weight-bold2" style="margin-left:21px;"><small>University of Michigan, Ann Arbor</small></span><br>
-</div>
-<div style="width:100%; height:5px; clear:both;"></div>
-<div style="line-height:15px;">
-<span class="text-secondary initialism" style="margin-left:21px;"><small>4956 BBB</small></span><br>
-<span class="text-secondary initialism" style="margin-left:21px;"><small>2260 Hayward St</small></span><br>
-<span class="text-secondary initialism" style="margin-left:21px"> <small>Ann Arbor, MI 48109-2121</small></span><br><br>
-</div>
-</div>
-  <br/>
-   <br/>
-      <br/>
-         <br/>
-
-   <br/>
-      <center>
-        
-       <p>夫唯不争, 故天下莫能与之争。--《道德经》   </p> 
- 
-         </center>  
- 
-      
-     <!--
-        <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
-        <ul>
-          <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
-        </ul>
-        -->
         
       </header>
       <section>
        
         <h1>About me</h1>
-
-      <!--     <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
---> 
+ 
 
 <p>
 Greetings~~ My name is Amber(Jiachen) Liu. Third year CS PhD advised by <a href="https://www.mosharaf.com/">Prof. Mosharaf Chowdhury</a>. 
@@ -291,53 +188,10 @@ I have maintain <a href="https://github.com/AmberLJC/FLsystem-paper/blob/main/RE
   </p>
  
 
-
-    <!--  
-<p>
-  <vi style="font-weight: bold; color: #024ba6">
- [News] 
-  </vi>
-  <vi style="font-weight: bold; color: #f7d139">I 
-  </vi>
-  
-  
-  <vi style="font-weight: bold; color: #024ba6">
-    will
-  </vi>
-  <vi style="font-weight: bold; color: #f7d139">start
-  </vi>
-  
-  
-  <vi style="font-weight: bold; color: #024ba6">
-my </vi>
-  <vi style="font-weight: bold; color: #f7d139">Ph.D  
-  </vi>
-  
-  
-  <vi style="font-weight: bold; color: #024ba6">
-    at 
-  </vi>
-  <vi style="font-weight: bold; color: #f7d139">Umich 
-  </vi>
-  
-  
-  <vi style="font-weight: bold; color: #024ba6">
-    this
-  </vi>
-  <vi style="font-weight: bold; color: #f7d139">fall 
-  </vi>
-  
-  <vi style="font-weight: bold; color: #024ba6">
-    ~~~
-  </vi>
-  
-</p>
---> 
+ 
        
     <h2>Publications</h2>
-
-<!-- <h4>Conference</h4>  -->
-
+ 
 <ul>
    
 <li> <div id="high_dim"> <a href="file/scaleml-mlsys21.pdf" >Fluid: Resource-Aware Hyperparameter Tuning Engine</a></div>
@@ -409,7 +263,6 @@ SH, China</div>
         
 <h2>Projects</h2>
 
-<!-- <h4>Conference</h4>  -->
 
 <ul>
    
@@ -417,34 +270,41 @@ SH, China</div>
 Dong Deng, Lei Cao, Jiachen Liu vand Runhui Wang
   
    </li>
- <!--
-  <li>
-        <div>    <a href="https://c-t-a.me/PaperGrader_Final_Report.pdf" > Text & Vision-Fused Framework for Academic Paper Review</a></div>
-            Yichen Yang, Tongan Cai, Shuyang Huang, Jiachen Liu
-
-     
-     </li>
-  --> 
 </ul>
 
+</div>
 
+      </section>
+      
+  
+<div style="width:100%; height:10px; clear:both;"></div>
+
+
+<div style="text-align:center;">
+
+<div style="text-align:left;" class="container" width="250px">
+<h4>Contact</h4>
+
+<i class="fa fa-envelope" style="font-size:16px"></i>
+
+<span class="font-weight-bold2" style="line-height:150%;">amberljc<my-email></my-email></span><br>
+<div style="line-height:5px;">
+<i class="fa fa-phone-square" style="font-size:18px;width:16px;" aria-hidden="true"></i>
+<span class="font-weight-bold2" style="line-height:150%;"><my-phone area-code="(734)" phone-number="881-4120" >-</my-phone></span><br>
+<div style="line-height:15px;">
+
+<i class="fa fa-map-marker" aria-hidden="true" style="font-size:20px;" style="margin-left:2px;"></i>
+<span class="font-weight-bold2" style="margin-left:5px;"><small>CSE, University of Michigan, Ann Arbor, 2260 Hayward St </small></span> 
 
 </div>
 
 
-   <!--
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    -->
-    
-      </section>
-      
+
+ 
+</div>
+</div>  
+       
+
       <footer>
       
       <p> 
@@ -453,15 +313,15 @@ Dong Deng, Lei Cao, Jiachen Liu vand Runhui Wang
     <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=9ac9f5&w=100&t=n&d=C9wiwH27Iusc4j3QW1Rpcxs0r_2h7Rd11ttSmAKDqAE&co=ffffff&cmo=bed6b0&cmn=fcaef0&ct=808080'> </script>
     </p>
 
-         <!--      <center>
-        
-       <p>夫唯不争, 故天下莫能与之争。   </p> 
-<div align="right">
-            --《道德经》</div>    
-         </center>  
- 
-    
-      -->
+
             </footer> 
+
+
+
+
+
+
+
   </body>
 </html>
+
