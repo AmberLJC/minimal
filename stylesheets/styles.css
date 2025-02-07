@@ -269,9 +269,9 @@ footer {
   }
 }
 
-/* Add a black background color to the top navigation */
+
 .topnav {
-  background-color: #FFC0CB;
+  background-color: #FFBF00;
   overflow: hidden;
 }
 
@@ -293,6 +293,6 @@ footer {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #F08080;
+  background-color: #FFBF00; /* Amber background color */
   color: white;
 }
